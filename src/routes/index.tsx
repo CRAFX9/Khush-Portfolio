@@ -407,9 +407,9 @@ function Page() {
 
       <footer className="footer shell">
         <span>
-          <span className="live-dot" /> KHUSH.AMRUTIYA // 2030
+          <span className="live-dot" /> KHUSH.AMRUTIYA
         </span>
-        <span>BUILT WITH HTML, CSS &amp; JAVASCRIPT</span>
+
         <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
           <GitBranch />
         </a>
