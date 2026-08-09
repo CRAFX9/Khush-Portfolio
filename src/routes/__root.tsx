@@ -91,7 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap",
       },
-      { rel: "icon", href:"https://mir-s3-cdn-cf.behance.net/project_modules/fs/2cb5eb126055273.6125c7fd137c8.jpg" "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href:"https://mir-s3-cdn-cf.behance.net/project_modules/fs/2cb5eb126055273.6125c7fd137c8.jpg", type: "image/png" },
     ],
   }),
 
