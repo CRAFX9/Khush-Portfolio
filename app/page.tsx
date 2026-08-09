@@ -88,10 +88,16 @@ export default function Page() {
           </div>
           <div className="hero-meta"><span><span className="live-dot" /> AVAILABLE TO LEARN</span><span>RAJKOT, GUJARAT</span></div>
         </div>
-        <div className="hero-terminal reveal">
+        <div className="hero-visual reveal">
+          <figure className="hero-photo-card">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-08-09%20at%201.49.39%20PM-UbKjiNZf4SXk3E5h7V1Fo1VHIIfR3L.jpeg" alt="Khush Amrutiya standing beside a white car outdoors" />
+            <figcaption><span className="live-dot" /> KHUSH_AMRUTIYA // PROFILE_IMAGE</figcaption>
+          </figure>
+          <div className="hero-terminal">
           <div className="terminal-top"><span><i /><i /><i /></span><span>khush@portfolio:~</span><span>01:01</span></div>
           <div className="terminal-body"><p><span className="terminal-prompt">$</span> whoami</p><p className="terminal-output">computer_engineering_student</p><p><span className="terminal-prompt">$</span> cat focus.txt</p><p className="terminal-output">web development<br />programming fundamentals<br />building in public</p><p><span className="terminal-prompt">$</span> <span className="cursor" /></p></div>
           <div className="terminal-footer"><span><Code2 /> HTML CSS JS</span><span>STATUS: <b>ONLINE</b></span></div>
+          </div>
         </div>
         <button className="scroll-cue" onClick={() => scrollTo('about')} aria-label="Scroll to about"><ArrowDown /></button>
       </section>
