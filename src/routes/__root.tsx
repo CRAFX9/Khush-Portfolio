@@ -92,7 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap",
       },
        { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/png", href: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2cb5eb126055273.6125c7fd137c8.jpg" },
+      { rel: "icon", type: "image/png", href: "https://kommodo.ai/i/Lhjmg1qTOfPLnZfDyUFr" },
     ],
   }),
 
