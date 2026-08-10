@@ -141,10 +141,8 @@ function Page() {
 
       <section id="home" className="hero shell">
         <div className="hero-copy reveal">
-          <div className="eyebrow">
-            <span className="live-dot" /> 1ST YEAR COMPUTER ENGINEERING{" "}
-            <span className="eyebrow-divider">//</span> BATCH_2026_2030
-          </div>
+          <p className="hero-kicker">Hello, world. I&apos;m</p>
+
           <p className="hero-kicker">Hello, world. I&apos;m</p>
           <h1>
             Khush <span>Amrutiya.</span>
