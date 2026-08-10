@@ -247,17 +247,49 @@ function Page() {
             </div>
             <p className="mono-label">$ cat /profile/about.md</p>
             <p className="large-copy">
-              I&apos;m a curious learner turning ideas into interfaces and concepts into code.
+              I&apos;m a curious learner turning ideas into interfaces and concepts into code —
+              building the fundamentals that carry across every technical role.
             </p>
             <p className="muted-copy">
               Currently pursuing B.E. in Computer Engineering at V.V.P. Engineering College, Rajkot.
               I&apos;m focused on learning the fundamentals well — then using them to create things
               that are clear, useful, and built to grow.
             </p>
+            <div className="about-columns">
+              <div>
+                <h3>How I learn</h3>
+                <p className="muted-copy">
+                  Small projects over big theory. I break a topic down, build something with it, and
+                  keep iterating until the concept genuinely clicks.
+                </p>
+              </div>
+              <div>
+                <h3>What I&apos;m building</h3>
+                <p className="muted-copy">
+                  Responsive interfaces, clean layouts, and browser-based tools — while moving
+                  steadily into JavaScript, data structures, and modern frameworks.
+                </p>
+              </div>
+              <div>
+                <h3>Beyond code</h3>
+                <p className="muted-copy">
+                  I enjoy clear communication, teamwork, and documenting what I learn so others can
+                  follow the same path faster.
+                </p>
+              </div>
+              <div>
+                <h3>Open to</h3>
+                <p className="muted-copy">
+                  Internships, collaborations, and any role — technical or analytical — where
+                  curiosity and consistency are valued.
+                </p>
+              </div>
+            </div>
             <div className="location-row">
               <span>BASED_IN</span>
               <strong>RAJKOT, GUJARAT</strong>
             </div>
+
           </article>
         </div>
       </section>
