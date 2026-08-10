@@ -142,8 +142,6 @@ function Page() {
       <section id="home" className="hero shell">
         <div className="hero-copy reveal">
           <p className="hero-kicker">Hello, world. I&apos;m</p>
-
-          <p className="hero-kicker">Hello, world. I&apos;m</p>
           <h1>
             Khush <span>Amrutiya.</span>
           </h1>
