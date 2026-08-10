@@ -171,9 +171,20 @@ function Page() {
           <figure className="hero-photo-card">
             <img src={HERO_IMAGE} alt="Khush Amrutiya standing beside a white car outdoors" />
             <figcaption>
-              <span className="live-dot" /> KHUSH_AMRUTIYA // PROFILE_IMAGE
+              <span>
+                <span className="live-dot" /> KHUSH_AMRUTIYA
+              </span>
+              <a
+                className="photo-linkedin"
+                href="https://www.linkedin.com/in/khush-amrutiya"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Network /> LINKEDIN <ArrowUpRight />
+              </a>
             </figcaption>
           </figure>
+
           <div className="hero-terminal">
             <div className="terminal-top">
               <span>
