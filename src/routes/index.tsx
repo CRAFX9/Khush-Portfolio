@@ -245,37 +245,60 @@ function Page() {
               <strong>RAJKOT, GUJARAT</strong>
             </div>
           </article>
-          <article className="glass-card timeline-card reveal">
-            <p className="mono-label">// ACADEMIC_TIMELINE</p>
-            <div className="timeline">
-              <div className="timeline-item">
-                <span className="timeline-node done">
-                  <Check />
-                </span>
-                <div>
-                  <span className="timeline-date">COMPLETED</span>
-                  <h3>Higher Secondary Education</h3>
-                  <p>Built the curiosity that led me toward engineering and technology.</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <span className="timeline-node active">
-                  <Sparkles />
-                </span>
-                <div>
-                  <span className="timeline-date">2026 — 2030 / NOW</span>
-                  <h3>B.E. Computer Engineering</h3>
-                  <p>V.V.P. Engineering College, Rajkot. Learning, experimenting, and shipping.</p>
-                </div>
+        </div>
+      </section>
+
+      <section id="education" className="section shell">
+        <div className="section-heading reveal">
+          <span>// 02</span>
+          <div>
+            <p>ACADEMIC_TIMELINE</p>
+            <h2>
+              Academic journey<span>.</span>
+            </h2>
+          </div>
+          <span className="heading-line" />
+        </div>
+        <article className="glass-card timeline-card reveal">
+          <div className="timeline">
+            <div className="timeline-item">
+              <span className="timeline-node active">
+                <Sparkles />
+              </span>
+              <div>
+                <span className="timeline-date">2024 — 2028 / NOW</span>
+                <h3>B.E. Computer Engineering</h3>
+                <p>V.V.P. Engineering College, Rajkot. Pursuing B.E. in Computer Engineering.</p>
               </div>
             </div>
-          </article>
-        </div>
+            <div className="timeline-item">
+              <span className="timeline-node done">
+                <Check />
+              </span>
+              <div>
+                <span className="timeline-date">COMPLETED 2026</span>
+                <h3>Higher Secondary Education</h3>
+                <p>Science Stream — Dholakiya School, Rajkot.</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <span className="timeline-node done">
+                <Check />
+              </span>
+              <div>
+                <span className="timeline-date">COMPLETED 2024</span>
+                <h3>Secondary Education (10th Grade)</h3>
+                <p>Dholakiya School, Rajkot.</p>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section id="skills" className="section shell">
         <div className="section-heading reveal">
-          <span>// 02</span>
+          <span>// 03</span>
+
           <div>
             <p>STACK_MANIFEST</p>
             <h2>
