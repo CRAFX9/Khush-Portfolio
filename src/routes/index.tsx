@@ -210,7 +210,7 @@ function Page() {
             </div>
             <div className="terminal-body">
               <p>
-                <span className="terminal-prompt">$</span> whoami
+                <span className="terminal-prompt">$</span> who am i
               </p>
               <p className="terminal-output">computer_engineering_student</p>
               <p>
