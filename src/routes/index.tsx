@@ -118,7 +118,7 @@ function Page() {
     <main>
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
-      <header className="site-header">
+      <header className={scrolled ? "site-header header-visible" : "site-header"}>
         <button className="brand" onClick={() => scrollTo("home")} aria-label="Back to home">
           <span className="brand-mark">
             <span />
