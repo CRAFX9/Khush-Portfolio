@@ -147,9 +147,11 @@ function Page() {
             Khush <span>Amrutiya.</span>
           </h1>
           <p className="hero-description">
-            A first-year computer engineering student building a strong foundation in web
-            technologies, logical thinking, and modern software engineering.
+            A computer engineering student building a strong foundation in problem solving, logic,
+            and clean engineering — and applying it across web development, software, data, and any
+            role where curiosity and craft matter.
           </p>
+
           <div className="hero-actions">
             <button className="button primary" onClick={() => scrollTo("projects")}>
               View My Work <ArrowUpRight />
