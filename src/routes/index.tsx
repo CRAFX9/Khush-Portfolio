@@ -135,7 +135,7 @@ function Page() {
           ))}
         </nav>
         <div className="header-actions">
-          <span className="version">V1.0.0_STABLE</span>
+          {/* <span className="version">V1.0.0_STABLE</span> */}
           <button
             className="theme-toggle"
             onClick={() => setDark(!dark)}
@@ -299,8 +299,8 @@ function Page() {
               </div>
             </div>
             <div className="location-row">
-              <span>BASED_IN</span>
-              <strong>RAJKOT, GUJARAT</strong>
+              <span>BASED_IN : RAJKOT, GUJARAT</span>
+              {/* <strong>RAJKOT, GUJARAT</strong> */}
             </div>
 
           </article>
