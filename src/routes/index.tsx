@@ -76,7 +76,20 @@ const projects = [
 function Page() {
   const [dark, setDark] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [sent, setSent] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const past = window.scrollY > 120;
+      setScrolled(past);
+      if (!past) setMobileOpen(false);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
 
   useEffect(() => {
     document.documentElement.classList.toggle("light", !dark);
