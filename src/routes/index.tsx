@@ -147,9 +147,11 @@ function Page() {
             Khush <span>Amrutiya.</span>
           </h1>
           <p className="hero-description">
-            A first-year computer engineering student building a strong foundation in web
-            technologies, logical thinking, and modern software engineering.
+            A computer engineering student building a strong foundation in problem solving, logic,
+            and clean engineering — and applying it across web development, software, data, and any
+            role where curiosity and craft matter.
           </p>
+
           <div className="hero-actions">
             <button className="button primary" onClick={() => scrollTo("projects")}>
               View My Work <ArrowUpRight />
@@ -169,9 +171,20 @@ function Page() {
           <figure className="hero-photo-card">
             <img src={HERO_IMAGE} alt="Khush Amrutiya standing beside a white car outdoors" />
             <figcaption>
-              <span className="live-dot" /> KHUSH_AMRUTIYA // PROFILE_IMAGE
+              <span>
+                <span className="live-dot" /> KHUSH_AMRUTIYA
+              </span>
+              <a
+                className="photo-linkedin"
+                href="https://www.linkedin.com/in/khush-amrutiya"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Network /> LINKEDIN <ArrowUpRight />
+              </a>
             </figcaption>
           </figure>
+
           <div className="hero-terminal">
             <div className="terminal-top">
               <span>
@@ -234,17 +247,49 @@ function Page() {
             </div>
             <p className="mono-label">$ cat /profile/about.md</p>
             <p className="large-copy">
-              I&apos;m a curious learner turning ideas into interfaces and concepts into code.
+              I&apos;m a curious learner turning ideas into interfaces and concepts into code —
+              building the fundamentals that carry across every technical role.
             </p>
             <p className="muted-copy">
               Currently pursuing B.E. in Computer Engineering at V.V.P. Engineering College, Rajkot.
               I&apos;m focused on learning the fundamentals well — then using them to create things
               that are clear, useful, and built to grow.
             </p>
+            <div className="about-columns">
+              <div>
+                <h3>How I learn</h3>
+                <p className="muted-copy">
+                  Small projects over big theory. I break a topic down, build something with it, and
+                  keep iterating until the concept genuinely clicks.
+                </p>
+              </div>
+              <div>
+                <h3>What I&apos;m building</h3>
+                <p className="muted-copy">
+                  Responsive interfaces, clean layouts, and browser-based tools — while moving
+                  steadily into JavaScript, data structures, and modern frameworks.
+                </p>
+              </div>
+              <div>
+                <h3>Beyond code</h3>
+                <p className="muted-copy">
+                  I enjoy clear communication, teamwork, and documenting what I learn so others can
+                  follow the same path faster.
+                </p>
+              </div>
+              <div>
+                <h3>Open to</h3>
+                <p className="muted-copy">
+                  Internships, collaborations, and any role — technical or analytical — where
+                  curiosity and consistency are valued.
+                </p>
+              </div>
+            </div>
             <div className="location-row">
               <span>BASED_IN</span>
               <strong>RAJKOT, GUJARAT</strong>
             </div>
+
           </article>
         </div>
       </section>
@@ -260,40 +305,33 @@ function Page() {
           </div>
           <span className="heading-line" />
         </div>
-        <article className="glass-card timeline-card reveal">
-          <div className="timeline">
-            <div className="timeline-item">
-              <span className="timeline-node active">
-                <Sparkles />
-              </span>
-              <div>
-                <span className="timeline-date">2024 — 2028 / NOW</span>
-                <h3>B.E. Computer Engineering</h3>
-                <p>V.V.P. Engineering College, Rajkot. Pursuing B.E. in Computer Engineering.</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <span className="timeline-node done">
-                <Check />
-              </span>
-              <div>
-                <span className="timeline-date">COMPLETED 2026</span>
-                <h3>Higher Secondary Education</h3>
-                <p>Science Stream — Dholakiya School, Rajkot.</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <span className="timeline-node done">
-                <Check />
-              </span>
-              <div>
-                <span className="timeline-date">COMPLETED 2024</span>
-                <h3>Secondary Education (10th Grade)</h3>
-                <p>Dholakiya School, Rajkot.</p>
-              </div>
-            </div>
-          </div>
-        </article>
+        <div className="timeline-grid">
+          <article className="glass-card edu-card reveal">
+            <span className="timeline-node active">
+              <Sparkles />
+            </span>
+            <span className="timeline-date">2024 — 2028 / NOW</span>
+            <h3>B.E. Computer Engineering</h3>
+            <p>V.V.P. Engineering College, Rajkot. Pursuing B.E. in Computer Engineering.</p>
+          </article>
+          <article className="glass-card edu-card reveal">
+            <span className="timeline-node done">
+              <Check />
+            </span>
+            <span className="timeline-date">COMPLETED 2026</span>
+            <h3>Higher Secondary Education</h3>
+            <p>Science Stream — Dholakiya School, Rajkot.</p>
+          </article>
+          <article className="glass-card edu-card reveal">
+            <span className="timeline-node done">
+              <Check />
+            </span>
+            <span className="timeline-date">COMPLETED 2024</span>
+            <h3>Secondary Education (10th Grade)</h3>
+            <p>Dholakiya School, Rajkot.</p>
+          </article>
+        </div>
+
       </section>
 
       <section id="skills" className="section shell">
