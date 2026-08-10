@@ -323,7 +323,7 @@ function Page() {
             <span className="timeline-node active">
               <Sparkles />
             </span>
-            <span className="timeline-date">2024 — 2028 / NOW</span>
+            <span className="timeline-date">2026 — 2030 / NOW</span>
             <h3>B.E. Computer Engineering</h3>
             <p>V.V.P. Engineering College, Rajkot. Pursuing B.E. in Computer Engineering.</p>
           </article>
