@@ -42,6 +42,7 @@ export const Route = createFileRoute("/")({
 const navItems: [string, string][] = [
   ["Home", "home"],
   ["About", "about"],
+  ["Education", "education"],
   ["Skills", "skills"],
   ["Projects", "projects"],
   ["Contact", "contact"],
@@ -321,7 +322,7 @@ function Page() {
 
       <section id="projects" className="section shell">
         <div className="section-heading reveal">
-          <span>// 03</span>
+          <span>// 04</span>
           <div>
             <p>WORKSPACE_LOG</p>
             <h2>
@@ -359,7 +360,7 @@ function Page() {
 
       <section id="contact" className="section shell contact-section">
         <div className="section-heading reveal">
-          <span>// 04</span>
+          <span>// 05</span>
           <div>
             <p>OPEN_CONNECTION</p>
             <h2>
