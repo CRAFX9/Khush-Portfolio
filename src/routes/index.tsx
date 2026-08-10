@@ -135,7 +135,7 @@ function Page() {
           ))}
         </nav>
         <div className="header-actions">
-         <span className="version">LIGHT_MODE_IS_A_BUG</span> 
+         <span className="version">v1.0.0_STABLE</span> 
           <button
             className="theme-toggle"
             onClick={() => setDark(!dark)}
