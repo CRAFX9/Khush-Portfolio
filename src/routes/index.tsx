@@ -305,40 +305,33 @@ function Page() {
           </div>
           <span className="heading-line" />
         </div>
-        <article className="glass-card timeline-card reveal">
-          <div className="timeline">
-            <div className="timeline-item">
-              <span className="timeline-node active">
-                <Sparkles />
-              </span>
-              <div>
-                <span className="timeline-date">2024 — 2028 / NOW</span>
-                <h3>B.E. Computer Engineering</h3>
-                <p>V.V.P. Engineering College, Rajkot. Pursuing B.E. in Computer Engineering.</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <span className="timeline-node done">
-                <Check />
-              </span>
-              <div>
-                <span className="timeline-date">COMPLETED 2026</span>
-                <h3>Higher Secondary Education</h3>
-                <p>Science Stream — Dholakiya School, Rajkot.</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <span className="timeline-node done">
-                <Check />
-              </span>
-              <div>
-                <span className="timeline-date">COMPLETED 2024</span>
-                <h3>Secondary Education (10th Grade)</h3>
-                <p>Dholakiya School, Rajkot.</p>
-              </div>
-            </div>
-          </div>
-        </article>
+        <div className="timeline-grid">
+          <article className="glass-card edu-card reveal">
+            <span className="timeline-node active">
+              <Sparkles />
+            </span>
+            <span className="timeline-date">2024 — 2028 / NOW</span>
+            <h3>B.E. Computer Engineering</h3>
+            <p>V.V.P. Engineering College, Rajkot. Pursuing B.E. in Computer Engineering.</p>
+          </article>
+          <article className="glass-card edu-card reveal">
+            <span className="timeline-node done">
+              <Check />
+            </span>
+            <span className="timeline-date">COMPLETED 2026</span>
+            <h3>Higher Secondary Education</h3>
+            <p>Science Stream — Dholakiya School, Rajkot.</p>
+          </article>
+          <article className="glass-card edu-card reveal">
+            <span className="timeline-node done">
+              <Check />
+            </span>
+            <span className="timeline-date">COMPLETED 2024</span>
+            <h3>Secondary Education (10th Grade)</h3>
+            <p>Dholakiya School, Rajkot.</p>
+          </article>
+        </div>
+
       </section>
 
       <section id="skills" className="section shell">
