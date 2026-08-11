@@ -10,6 +10,8 @@ import {
   Mail,
   Menu,
   Moon,
+  Phone,
+
   Send,
   Sparkles,
   Sun,
@@ -78,6 +80,10 @@ function Page() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [sent, setSent] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
 
   useEffect(() => {
     const onScroll = () => {
@@ -432,6 +438,9 @@ function Page() {
               <a href="mailto:khushamrutiya9@gmail.com">
                 <Mail /> khushamrutiya9@gmail.com <ArrowUpRight />
               </a>
+              <a href="tel:+919726696590">
+                <Phone /> +91 97266 96590 <ArrowUpRight />
+              </a>
               <a
                 href="https://www.linkedin.com/in/khush-amrutiya"
                 target="_blank"
@@ -445,25 +454,53 @@ function Page() {
             className="glass-card contact-form reveal"
             onSubmit={(event) => {
               event.preventDefault();
+              const subject = `Portfolio contact from ${name || "website visitor"}`;
+              const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+              window.location.href = `mailto:khushamrutiya9@gmail.com?subject=${encodeURIComponent(
+                subject,
+              )}&body=${encodeURIComponent(body)}`;
               setSent(true);
             }}
           >
             <label htmlFor="name">
               YOUR_NAME
-              <input id="name" required placeholder="Jane Doe" />
+              <input
+                id="name"
+                required
+                maxLength={100}
+                placeholder="Jane Doe"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+              />
             </label>
             <label htmlFor="email">
               YOUR_EMAIL
-              <input id="email" type="email" required placeholder="jane@example.com" />
+              <input
+                id="email"
+                type="email"
+                required
+                maxLength={255}
+                placeholder="jane@example.com"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
             </label>
             <label htmlFor="message">
               YOUR_MESSAGE
-              <textarea id="message" required placeholder="Tell me what you're thinking..." rows={4} />
+              <textarea
+                id="message"
+                required
+                maxLength={2000}
+                placeholder="Tell me what you're thinking..."
+                rows={4}
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+              />
             </label>
             <button className="button primary" type="submit">
               {sent ? (
                 <>
-                  Message queued <Check />
+                  Message ready <Check />
                 </>
               ) : (
                 <>
@@ -471,8 +508,14 @@ function Page() {
                 </>
               )}
             </button>
-            {sent && <p className="success-note">Thanks — your message is ready to send.</p>}
+            {sent && (
+              <p className="success-note">
+                Your mail app just opened with the message — hit send and it lands in
+                khushamrutiya9@gmail.com.
+              </p>
+            )}
           </form>
+
         </div>
       </section>
 
